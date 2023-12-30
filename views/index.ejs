@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %>.   Let's test reading get+post data</p>
+
+<b>New Customer Form to test POST request to save data to MongoDB collection customers /readNameAndRespond</b>
+<br/>
+<form action="/saveNewCustomer" method="post">
+
+  Name: <input type="text" name="name"> </input>
+  <br/>
+  Email: <input type="text" name="email"> </input>
+  <br/>
+  <input type="submit" value="Go"/>
+</form>
+</body>
+</html>
