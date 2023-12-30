@@ -16,6 +16,6 @@ It will respond with a simple welcome to the new customer.
 ## IMPORTANT:  this is simple code  and it does not check if the customer email already exists --so it will stupidly create a new customer each
 time regardless if it is the same information.  THIS should obviously be hanged
 ## IMPORTANT:  you will need to create your own databaseConnection.js file in the controllers directory that contains the following code
-'''
-module.exports = { uri: 'mongodb+srv://YOURLogin:YOURPassword@YOURClustername.WHATEVER.mongodb.net/?retryWrites=true&w=majority' };
-'''
+
+>module.exports = { uri: 'mongodb+srv://YOURLogin:YOURPassword@YOURClustername.WHATEVER.mongodb.net/?retryWrites=true&w=majority' };
+
