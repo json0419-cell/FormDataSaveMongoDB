@@ -10,7 +10,7 @@ var { uri } = require('./databaseConnection');
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
 //connection string, fill it in with YOUR information for your MongoDB deployment
-//const uri = "mongodb+srv://grewe:Iamgrewe@cluster0.hsou9ry.mongodb.net/?retryWrites=true&w=majority";
+//const uri = "mongodb+srv://grewe:jority";
 
 
 // SETP 1: Create a MongoClient with a MongoClientOptions object to set the Stable API version
