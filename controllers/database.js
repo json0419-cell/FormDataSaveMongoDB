@@ -84,3 +84,21 @@ async function saveCustomerToMongoDB(name, email) {
     await client.close();
     }
 }
+
+const DB_NAME = 'shoppingsite';
+
+exports.listCustomers = async (req, res) => {
+    try{
+        await client.connect();
+        const items = await client.db(DB_NAME).collection('customers').find({})
+            .sort({ _id: -1 })
+            .limit(10)
+            .toArray();
+        return res.render('customers',{customers: items});
+    } catch (e) {
+        console.error(e);
+        return res.status(500).send('Failed to load customers');
+    } finally {
+        await client.close();
+    }
+}
